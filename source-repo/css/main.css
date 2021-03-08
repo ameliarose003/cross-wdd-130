@@ -41,6 +41,13 @@ header {
     background-color: var(--alt-background-color);
 }
 
+header div #company-name {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+}
+
 header a {
     color: var(--alt-font-color);
 }
