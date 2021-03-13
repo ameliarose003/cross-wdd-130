@@ -3,22 +3,22 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: white;
-    --alt-background-color: gainsboro;
+    --background-color: #93B4DC;
+    --alt-background-color: #727CAC;
     --font-color: black;
-    --alt-font-color: darkslategray;
+    --alt-font-color: black;
     --border-color: black;
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
-    --dark-font-color: white;
+    --dark-background-color: #224168;
+    --dark-alt-background-color: #353C5A;
+    --dark-font-color: rgba(255, 255, 255, 0.562);
     --dark-alt-font-color: gainsboro;
     --dark-border-color: white;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     width: 100%;
     height: 100%;
     text-rendering: optimizeLegibility;
@@ -32,20 +32,31 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
     font-size: var(--font-size);
-    padding: var(--spacing);
+    padding:var(--spacing);
     border-bottom: 1px solid var(--border-color);
     color: var(--alt-font-color);
     background-color: var(--alt-background-color);
 }
 
-header div #company-name {
-    grid-row: 1;
-    grid-column: 2;
+#banner img{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
+    padding: 0%;
+    margin:0%;
+}
+
+#company-name {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    /*align-items: center;*/
+    line-height: -5;
+    font-size: 30px;
 }
 
 header a {
@@ -65,9 +76,12 @@ header nav ul {
 }
 
 header nav ul li {
+    grid-row: 1;
+    grid-column: 1;
     display: inline-block;
     padding: 7.5px;
-    margin-right: 7.5px;
+    /* margin-right: 7.5px; */
+    text-align: center;
 }
 
 main {

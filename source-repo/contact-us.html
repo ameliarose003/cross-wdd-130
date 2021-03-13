@@ -1,9 +1,47 @@
+<!DOCTYPE html>
+
 <script src="js/fake-send.js"></script>
 
 <form method="GET" action="contact-us.html" id="contact-form">
-    [ADD FORM PARTS HERE]
+    <label>
+        Name:<!-- In a normal website you would wrap Name: in a Span-->
+        <input type="text" name="name" id="cf-name" placeholder="Name"> <!--cf = contact form-->
+    </label>
+    <label>
+        Subject:
+        <input type="text" name="subject" id="cf-subject" placeholder="Subject">
+    </label>
+    <label>
+        Message:
+        <textarea name="message" placeholder="Try it!"></textarea>
+    </label>
     <input type="submit" value="Send Message" id="contact-form-submit">
     <div id="contact-form-message"></div>
 </form>
 
-<!-- Need to use this code inside your contact page-->
+<!-- Need to use this code inside your contact page
+get is done in the url
+?name=Chris&subject=test%20message
+post is done in the backend behind the scenes
+packaged
+name:"Chris Keers"
+Subject: "test messsage"
+
+
+input[type="text"]
+
+label {
+    padding-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+flex box
+
+to make it at the bottom
+div: flex
+top flex 1
+bottom not flex value auto form here
+
+
+-->
