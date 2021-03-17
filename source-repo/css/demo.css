@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+@media (min-width: 768px) {
+
+    body{
+        background-color: cadetblue;
+    }
+}

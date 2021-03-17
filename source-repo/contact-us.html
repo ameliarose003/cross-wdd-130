@@ -50,19 +50,28 @@
 <script src="js/fake-send.js"></script>
 
 <form method="GET" action="contact-us.html" id="contact-form">
-    <label>
+    <label> <!-- has to be a child inside a form.... It doesn't have to wrap input -->
         Name:<!-- In a normal website you would wrap Name: in a Span-->
+        <br>
         <input type="text" name="name" id="cf-name" placeholder="Name"> <!--cf = contact form-->
     </label>
+    <br>
     <label>
+        <br>
         Subject:
+        <br>
         <input type="text" name="subject" id="cf-subject" placeholder="Subject">
     </label>
+    <br>
+    <br>
     <label>
         Message:
-        <textarea name="message" placeholder="Try it!"></textarea>
+        <br>
+        <textarea rows = "5" cols = "50" textarea name="message" placeholder="Try it!"></textarea>
     </label>
-    <input type="submit" value="Send Message" id="contact-form-submit">
+    <br>
+    <!--<input type="submit" value="Send Message" id="contact-form-submit">-->
+    <button id = "contact-form-submit"> Send Message</button>
     <div id="contact-form-message"></div>
 </form>
 
